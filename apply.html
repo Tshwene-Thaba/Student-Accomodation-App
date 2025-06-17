@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Student Accommodation Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/19bbbc66ea.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.jpg">
+
+    
+</head>
+<body>
+    <header class="header-apply">
+    <img title="Home logo" src="pictures/logo.png" alt="Sunrise Student Accommodation logo">
+    <h1 title="Name">Sunrise Student Accommodation</h1>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="apply.html" class="apply-btn">Apply</a></li>
+     
+        </ul>
+    </nav>
+</header>
+
+<section class="bodyApply">
+    <h2>Sunrise Student Accommodation Application</h2>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname: </label></td>
+                <td><input type="text" id="surname" name="surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="text" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number: </label></td>
+                <td><input type="tel" id="contact" name="contact" required></td>
+            </tr>
+            <tr>
+                <td><label for="year">Year: </label></td>
+                <td>
+                    <select id="year" name="year" required>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="student_number">Student Number: </label></td>
+                <td><input type="text" id="student_number" name="student_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="institution">Institution of Study: </label></td>
+                <td><input type="text" id="institution" name="institution" required></td>
+            </tr>
+            <tr>
+                <td><label for="funding">Type of Funding: </label></td>
+                <td>
+                    <select id="funding" name="funding" required>
+                        <option value="NSFAS">NSFAS</option>
+                        <option value="SELF-PAYING">Self-Paying</option>
+                        <option value="BURSARY">Bursary</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="proof_funding">Proof of Funding: </label></td>
+                <td><input type="file" id="proof_funding" name="proof_funding[]" multiple required></td>
+            </tr>
+            <tr>
+                <td><label for="proof_registration">Proof of Registration: </label></td>
+                <td><input type="file" id="proof_registration" name="proof_registration[]" multiple required></td>
+            </tr>
+            <tr>
+                <td><label for="identity_document">Identity Document: </label></td>
+                <td><input type="file" id="identity_document" name="identity_document" required></td>
+            </tr>
+            <tr>
+                <td><label for="room">Preferred Room: </label></td>
+                <td>
+                    <select id="room" name="room" required>
+                        <option value="Sharing Room R 5200">Sharing Room R 5 000</option>
+                       
+                        <option value="Single Room from R 5800">Single Room from R 5 800</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Submit Application</button></td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section social">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.bing.com/ck/a?!&&p=56b3c66d915fe7be7a3d1b9a63284ff884f4cd3ee9653cb946db1449bfa35749JmltdHM9MTc0ODEzMTIwMA&ptn=3&ver=2&hsh=4&fclid=17bc7be9-3517-6525-20fd-6f1c34ea64a8&psq=whatsapp&u=a1aHR0cHM6Ly93ZWIud2hhdHNhcHAuY29tLw&ntb=1"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="footer-section">
+            <h3>Subscribe</h3>
+            <form action="#">
+                <input type="email" placeholder="Your email..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+     <div class="footer__text">
+            <p>© 2025 Student Accommodation | All Rights Reserved.</p>
+        </div>
+</footer>
+
+</body>
+</html>
